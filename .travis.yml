@@ -15,8 +15,6 @@ before_install:
   - gcloud config set compute/zone asia-southeast1-a
   - gcloud container clusters get-credentials k8sgen
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-script:
-  - docker run pavittwk/nodejs
 deploy:
   provider: scirpt
   scirpt: bash ./deploy.sh
