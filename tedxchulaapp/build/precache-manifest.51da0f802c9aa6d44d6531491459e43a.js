@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/mitr-v4-thai_latin-regular.e219c290.woff2"
   },
   {
-    "revision": "c7ea3e7f0160dce51935",
+    "revision": "4836ae174f2a975f7e5f",
     "url": "/static/css/main.869d2a9f.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/static/media/mitr-v4-thai_latin-300.0578c24f.woff"
   },
   {
-    "revision": "c7ea3e7f0160dce51935",
-    "url": "/static/js/main.173887f9.chunk.js"
+    "revision": "4836ae174f2a975f7e5f",
+    "url": "/static/js/main.617a8f14.chunk.js"
   },
   {
     "revision": "9fc2c73164ed52606456632a7669db90",
@@ -60,16 +60,16 @@ self.__precacheManifest = [
     "url": "/static/media/mitr-v4-latin_thai-200.bc4a7258.svg"
   },
   {
-    "revision": "a55512053c2c887c80fc0daa4a690ab0",
-    "url": "/static/media/mitr-v4-thai_latin-regular.a5551205.svg"
-  },
-  {
     "revision": "b183d8b8ddc7750174eaddcecbbe0697",
     "url": "/static/media/mitr-v4-thai_latin-300.b183d8b8.svg"
   },
   {
     "revision": "a0ccb789740f24d89db6180661f65f81",
     "url": "/static/media/mitr-v4-latin_thai-200.a0ccb789.ttf"
+  },
+  {
+    "revision": "a55512053c2c887c80fc0daa4a690ab0",
+    "url": "/static/media/mitr-v4-thai_latin-regular.a5551205.svg"
   },
   {
     "revision": "9e3de7364285b1d0b7aa8b7a657ee5cb",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "b109b10b4a0d33f67e26ee76b2ae4150",
+    "revision": "713596688ef92d34bb7a6f13e22bec81",
     "url": "/index.html"
   }
 ];
