@@ -4,9 +4,16 @@ metadata:
   name: ingress-sevice
   annotations:
     kubernetes.io/ingress.class: nginx
+    certmanager.k8s.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
+  tls:
+    - hosts:
+        - app.tedxchulalongkornu.net
+      secretName: tedxapp-net
   rules:
-    - http:
+    - host: app.tedxchulalongkornu.net
+      http:
         paths:
           - path: /
             backend:
