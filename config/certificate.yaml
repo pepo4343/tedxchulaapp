@@ -1,0 +1,18 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: tedxapp-tls
+spec:
+  secretName: tedxapp-net
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: app.tedxchulalongkornu.net
+  dnsNames:
+    - app.tedxchulalongkornu.net
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - app.tedxchulalongkornu.net
