@@ -19,6 +19,6 @@ script:
   - docker run pavittwk/nodejs
 deploy:
   provider: script
-  scirpt: bash ./deploy.sh
+  script: bash ./deploy.sh
   on:
     branch: master
