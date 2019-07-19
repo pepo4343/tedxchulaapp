@@ -1,0 +1,38 @@
+version: "3.2"
+services:
+  nodejs:
+    depends_on:
+      - mongo
+      - mongo-express
+    restart: always
+    build: "."
+    ports:
+      - "3000:3000"
+    networks:
+      - backend
+    environment:
+      TZ: "Asia/Bangkok"
+    volumes:
+      - /node/node_modules
+      - .:/node
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      TZ: "Asia/Bangkok"
+    ports:
+      - 27018:27017
+    networks:
+      - backend
+
+  mongo-express:
+    image: mongo-express
+    environment:
+      TZ: "Asia/Bangkok"
+    restart: always
+    networks:
+      - backend
+    ports:
+      - 8081:8081
+networks:
+  backend:

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      component: nodejs
+  template:
+    metadata:
+      labels:
+        component: nodejs
+    spec:
+      containers:
+        - name: nodejs
+          image: pavittwk/nodejs
+          ports:
+            - containerPort: 3000
