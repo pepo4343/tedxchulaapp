@@ -19,3 +19,7 @@ spec:
             backend:
               serviceName: nodejs
               servicePort: 3000
+          - path: /db
+            backend:
+              serviceName: mongoexpress
+              servicePort: 8081

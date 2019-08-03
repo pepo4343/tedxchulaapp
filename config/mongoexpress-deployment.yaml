@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongoexpress-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: mongoexpress
+  template:
+    metadata:
+      labels:
+        component: mongoexpress
+    spec:
+      containers:
+        - name: mongoexpress
+          image: mongo-express
+          ports:
+            - containerPort: 8081
